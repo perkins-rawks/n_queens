@@ -67,6 +67,8 @@ impl<T: fmt::Display + Copy> Stack<T> {
             return;
         }
 
+        // If the stack is not empty then print in the shape of an array going
+        // bottom to top
         println!("From bottom to top [Bottom ... Top], the Stack contains: ");
         print!("[");
         for (idx, item) in self.contents.iter().enumerate() {
